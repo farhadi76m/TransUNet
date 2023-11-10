@@ -76,7 +76,7 @@ class MyDataset(torch.utils.data.Dataset):
     '''
     Class to load the dataset
     '''
-    def __init__(self, transform=None,valid=False, image_root ='/content/data/bdd100k/bdd100k/images/100k/train' , gt_path):
+    def __init__(self, transform=None,valid=False, image_root ='/content/data/bdd100k/bdd100k/images/100k/train' , gt_path=None):
         '''
         :param imList: image list (Note that these lists have been processed and pickled using the loadData.py)
         :param labelList: label list (Note that these lists have been processed and pickled using the loadData.py)
