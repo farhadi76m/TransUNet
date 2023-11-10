@@ -112,7 +112,7 @@ class MyDataset(torch.utils.data.Dataset):
         image = cv2.imread(image_name)
         label1_path = os.path.join(self.seg_path,self.names[idx].replace('jpg','png'))
         label1 = cv2.imread(label1_path, 0)
-        label2_path = os.path.join(self.lane_path',self.names[idx].replace('jpg','png'))
+        label2_path = os.path.join(self.lane_path,self.names[idx].replace('jpg','png'))
         label2 = cv2.imread(label2_path, 0)
         if not self.valid:
             if random.random()<0.5:
